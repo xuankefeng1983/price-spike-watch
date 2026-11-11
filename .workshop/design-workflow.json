@@ -1,0 +1,790 @@
+{
+  "assumptions": [],
+  "attendee": "labuser+29@awsbricks.com",
+  "brief_revision": 4,
+  "decisions": [
+    {
+      "at": "2026-11-10T22:54:28Z",
+      "by": "attendee",
+      "text": "Spike threshold $300/MWh, contiguous intervals grouped into events"
+    },
+    {
+      "at": "2026-11-11T00:27:08Z",
+      "by": "attendee",
+      "text": "Agent button = 'Explain this view' panel: summary + how to read, grounded only on on-screen numbers; written for execs/non-specialists"
+    },
+    {
+      "at": "2026-11-11T00:39:26Z",
+      "by": "agent",
+      "text": "Explain panel calls system.ai.claude-sonnet-5-5 as the signed-in user (serving scope), app identity as fallback"
+    }
+  ],
+  "direction": null,
+  "evidence": {
+    "build": {
+      "build": "deployed",
+      "preview": "https://price-spike-watch-7474650366574225.aws.databricksapps.com"
+    },
+    "inspect": {
+      "artifacts": [
+        {
+          "action": null,
+          "bytes": 59884,
+          "captured_at": "2026-11-10T23:01:47Z",
+          "controls": 17,
+          "kind": "screenshot",
+          "label": "initial",
+          "path": ".workshop/evidence/20261110T230136Z-local-desktop-initial.png",
+          "revision": {
+            "commit": "1543df90ff3351997e8d475fc8d0aac40b220618",
+            "dirty": "ca13d50e24a43c97"
+          },
+          "scope": "local",
+          "sha256": "929413c3b8d8f5820457f0bb7c9f46398af63cfecf96cda662edc3db5597f002",
+          "text_chars": 839,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "http://localhost:9000",
+          "viewport": "desktop"
+        },
+        {
+          "action": null,
+          "bytes": 106975,
+          "captured_at": "2026-11-10T23:02:41Z",
+          "controls": 160,
+          "kind": "screenshot",
+          "label": "initial",
+          "path": ".workshop/evidence/20261110T230231Z-local-desktop-initial.png",
+          "revision": {
+            "commit": "1543df90ff3351997e8d475fc8d0aac40b220618",
+            "dirty": "ca13d50e24a43c97"
+          },
+          "scope": "local",
+          "sha256": "b12163d1e608c249ecd8857989cb8f71c2de40361bef55e4dba8065fa1654e70",
+          "text_chars": 11184,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "http://localhost:9000",
+          "viewport": "desktop"
+        },
+        {
+          "action": {
+            "action": "click:QLD",
+            "element": "button",
+            "label": "qld",
+            "result": "ok",
+            "viewport": "desktop",
+            "visible_change": true
+          },
+          "bytes": 105773,
+          "captured_at": "2026-11-10T23:02:43Z",
+          "controls": 22,
+          "kind": "screenshot",
+          "label": "after-1",
+          "path": ".workshop/evidence/20261110T230231Z-local-desktop-after-1.png",
+          "revision": {
+            "commit": "1543df90ff3351997e8d475fc8d0aac40b220618",
+            "dirty": "ca13d50e24a43c97"
+          },
+          "scope": "local",
+          "sha256": "d5a8bc432de4183293e7c280433305d5d29dc721dc9ae196d5f8f6605ea06e93",
+          "text_chars": 1765,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "http://localhost:9000",
+          "viewport": "desktop"
+        },
+        {
+          "action": null,
+          "bytes": 107091,
+          "captured_at": "2026-11-10T23:06:26Z",
+          "controls": 160,
+          "kind": "screenshot",
+          "label": "initial",
+          "path": ".workshop/evidence/20261110T230621Z-deployed-desktop-initial.png",
+          "revision": {
+            "commit": "7b93b4d38c776fac8fe37069b5abf911b5d851e5",
+            "dirty": ""
+          },
+          "scope": "deployed",
+          "sha256": "174345172587981ce342eb7db80b4103288082ed9eeb6eada700691b3f1b24b6",
+          "text_chars": 11206,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": null,
+          "bytes": 107091,
+          "captured_at": "2026-11-10T23:06:34Z",
+          "controls": 160,
+          "kind": "screenshot",
+          "label": "initial",
+          "path": ".workshop/evidence/20261110T230630Z-deployed-desktop-initial.png",
+          "revision": {
+            "commit": "7b93b4d38c776fac8fe37069b5abf911b5d851e5",
+            "dirty": ""
+          },
+          "scope": "deployed",
+          "sha256": "a34616bf2eb5efda96a663d09051c26a1010023bf5cfbdf4c9db72738b772d35",
+          "text_chars": 11206,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": {
+            "action": "click:Both years",
+            "element": "button",
+            "label": "both years",
+            "result": "ok",
+            "viewport": "desktop",
+            "visible_change": true
+          },
+          "bytes": 111468,
+          "captured_at": "2026-11-10T23:06:35Z",
+          "controls": 217,
+          "kind": "screenshot",
+          "label": "after-1",
+          "path": ".workshop/evidence/20261110T230630Z-deployed-desktop-after-1.png",
+          "revision": {
+            "commit": "7b93b4d38c776fac8fe37069b5abf911b5d851e5",
+            "dirty": ""
+          },
+          "scope": "deployed",
+          "sha256": "c6310d3aa59c3b7b065b1ae200e9632b92ca411a6ce9b8a0d254fc4307073928",
+          "text_chars": 15994,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": null,
+          "bytes": 109646,
+          "captured_at": "2026-11-11T00:30:39Z",
+          "controls": 161,
+          "kind": "screenshot",
+          "label": "initial",
+          "path": ".workshop/evidence/20261111T003028Z-local-desktop-initial.png",
+          "revision": {
+            "commit": "7b93b4d38c776fac8fe37069b5abf911b5d851e5",
+            "dirty": "475944fa26dd8e1f"
+          },
+          "scope": "local",
+          "sha256": "c0669492d3c7696a5498fa22b4c49e0085ef3af06fa2155cd2651412f167d98e",
+          "text_chars": 11224,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "http://localhost:9000",
+          "viewport": "desktop"
+        },
+        {
+          "action": {
+            "action": "click:QLD",
+            "element": "button",
+            "label": "qld",
+            "result": "ok",
+            "viewport": "desktop",
+            "visible_change": true
+          },
+          "bytes": 109251,
+          "captured_at": "2026-11-11T00:30:40Z",
+          "controls": 23,
+          "kind": "screenshot",
+          "label": "after-1",
+          "path": ".workshop/evidence/20261111T003028Z-local-desktop-after-1.png",
+          "revision": {
+            "commit": "7b93b4d38c776fac8fe37069b5abf911b5d851e5",
+            "dirty": "475944fa26dd8e1f"
+          },
+          "scope": "local",
+          "sha256": "31e68efa32ca1353f8d21609743e504d0af0e116fc10731c7c2cd5c72ff9625e",
+          "text_chars": 1786,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "http://localhost:9000",
+          "viewport": "desktop"
+        },
+        {
+          "action": {
+            "action": "click:Explain this view",
+            "element": "button",
+            "label": "explain this view",
+            "result": "ok",
+            "viewport": "desktop",
+            "visible_change": true
+          },
+          "bytes": 103721,
+          "captured_at": "2026-11-11T00:30:42Z",
+          "controls": 25,
+          "kind": "screenshot",
+          "label": "after-2",
+          "path": ".workshop/evidence/20261111T003028Z-local-desktop-after-2.png",
+          "revision": {
+            "commit": "7b93b4d38c776fac8fe37069b5abf911b5d851e5",
+            "dirty": "475944fa26dd8e1f"
+          },
+          "scope": "local",
+          "sha256": "3c117980de7b48313f3fc25053a493e39f6ec606cb3dd2e86402e98291177565",
+          "text_chars": 2094,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "http://localhost:9000",
+          "viewport": "desktop"
+        },
+        {
+          "action": null,
+          "bytes": 109379,
+          "captured_at": "2026-11-11T00:31:28Z",
+          "controls": 161,
+          "kind": "screenshot",
+          "label": "initial",
+          "path": ".workshop/evidence/20261111T003123Z-deployed-desktop-initial.png",
+          "revision": {
+            "commit": "d6f1a55fc160e1357b31798b235ce567448d2af9",
+            "dirty": ""
+          },
+          "scope": "deployed",
+          "sha256": "bccab5bc12971351b4399be98cb6fae368894723b5f1cde9f55888dbfac77167",
+          "text_chars": 11224,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": null,
+          "bytes": 109379,
+          "captured_at": "2026-11-11T00:31:37Z",
+          "controls": 161,
+          "kind": "screenshot",
+          "label": "initial",
+          "path": ".workshop/evidence/20261111T003133Z-deployed-desktop-initial.png",
+          "revision": {
+            "commit": "d6f1a55fc160e1357b31798b235ce567448d2af9",
+            "dirty": ""
+          },
+          "scope": "deployed",
+          "sha256": "a0d0bacab9951e51f3e47714a7802b7b2e66bd4449af8d21514e1f631f7bef02",
+          "text_chars": 11224,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": {
+            "action": "click:Explain this view",
+            "element": "button",
+            "label": "explain this view",
+            "result": "ok",
+            "viewport": "desktop",
+            "visible_change": true
+          },
+          "bytes": 105615,
+          "captured_at": "2026-11-11T00:31:38Z",
+          "controls": 163,
+          "kind": "screenshot",
+          "label": "after-1",
+          "path": ".workshop/evidence/20261111T003133Z-deployed-desktop-after-1.png",
+          "revision": {
+            "commit": "d6f1a55fc160e1357b31798b235ce567448d2af9",
+            "dirty": ""
+          },
+          "scope": "deployed",
+          "sha256": "787354795d6215f7da5b7f6fef0a36821a5876ca68c3c47f06afb217fc93356f",
+          "text_chars": 11392,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": null,
+          "bytes": 109362,
+          "captured_at": "2026-11-11T00:33:13Z",
+          "controls": 161,
+          "kind": "screenshot",
+          "label": "initial",
+          "path": ".workshop/evidence/20261111T003309Z-deployed-desktop-initial.png",
+          "revision": {
+            "commit": "d6f1a55fc160e1357b31798b235ce567448d2af9",
+            "dirty": "5359f5b9c5c2c82c"
+          },
+          "scope": "deployed",
+          "sha256": "ee30da0347a20539d95e2c40672f5fe19d9d8e3f2a793518dc126f665bb99c6b",
+          "text_chars": 11224,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": null,
+          "bytes": 109379,
+          "captured_at": "2026-11-11T00:33:19Z",
+          "controls": 161,
+          "kind": "screenshot",
+          "label": "initial",
+          "path": ".workshop/evidence/20261111T003315Z-deployed-desktop-initial.png",
+          "revision": {
+            "commit": "d6f1a55fc160e1357b31798b235ce567448d2af9",
+            "dirty": "5359f5b9c5c2c82c"
+          },
+          "scope": "deployed",
+          "sha256": "bccab5bc12971351b4399be98cb6fae368894723b5f1cde9f55888dbfac77167",
+          "text_chars": 11224,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": {
+            "action": "click:Explain this view",
+            "element": "button",
+            "label": "explain this view",
+            "result": "ok",
+            "viewport": "desktop",
+            "visible_change": true
+          },
+          "bytes": 105615,
+          "captured_at": "2026-11-11T00:33:20Z",
+          "controls": 164,
+          "kind": "screenshot",
+          "label": "after-1",
+          "path": ".workshop/evidence/20261111T003315Z-deployed-desktop-after-1.png",
+          "revision": {
+            "commit": "d6f1a55fc160e1357b31798b235ce567448d2af9",
+            "dirty": "5359f5b9c5c2c82c"
+          },
+          "scope": "deployed",
+          "sha256": "787354795d6215f7da5b7f6fef0a36821a5876ca68c3c47f06afb217fc93356f",
+          "text_chars": 11425,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": null,
+          "bytes": 109362,
+          "captured_at": "2026-11-11T00:36:27Z",
+          "controls": 161,
+          "kind": "screenshot",
+          "label": "initial",
+          "path": ".workshop/evidence/20261111T003622Z-deployed-desktop-initial.png",
+          "revision": {
+            "commit": "8a431c8f7130c4fbe8806f78110b30ed69b6a408",
+            "dirty": ""
+          },
+          "scope": "deployed",
+          "sha256": "ee30da0347a20539d95e2c40672f5fe19d9d8e3f2a793518dc126f665bb99c6b",
+          "text_chars": 11224,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": null,
+          "bytes": 109336,
+          "captured_at": "2026-11-11T00:36:31Z",
+          "controls": 161,
+          "kind": "screenshot",
+          "label": "initial",
+          "path": ".workshop/evidence/20261111T003628Z-deployed-desktop-initial.png",
+          "revision": {
+            "commit": "8a431c8f7130c4fbe8806f78110b30ed69b6a408",
+            "dirty": ""
+          },
+          "scope": "deployed",
+          "sha256": "23f4d3ea0fbaaa7a22fb5b3c172ab545dd2fa15ebcdbef3c5962682830c42250",
+          "text_chars": 11224,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": {
+            "action": "click:Explain this view",
+            "element": "button",
+            "label": "explain this view",
+            "result": "ok",
+            "viewport": "desktop",
+            "visible_change": true
+          },
+          "bytes": 105589,
+          "captured_at": "2026-11-11T00:36:33Z",
+          "controls": 164,
+          "kind": "screenshot",
+          "label": "after-1",
+          "path": ".workshop/evidence/20261111T003628Z-deployed-desktop-after-1.png",
+          "revision": {
+            "commit": "8a431c8f7130c4fbe8806f78110b30ed69b6a408",
+            "dirty": ""
+          },
+          "scope": "deployed",
+          "sha256": "0bc822abd44dccce550e4f127bab0d789a1c10f479b6c0009da9c6760565cd2c",
+          "text_chars": 11425,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": {
+            "action": "click:Explain this view",
+            "element": "button",
+            "label": "explain this view",
+            "result": "ok",
+            "viewport": "desktop",
+            "visible_change": false
+          },
+          "bytes": 105589,
+          "captured_at": "2026-11-11T00:36:34Z",
+          "controls": 164,
+          "kind": "screenshot",
+          "label": "after-2",
+          "path": ".workshop/evidence/20261111T003628Z-deployed-desktop-after-2.png",
+          "revision": {
+            "commit": "8a431c8f7130c4fbe8806f78110b30ed69b6a408",
+            "dirty": ""
+          },
+          "scope": "deployed",
+          "sha256": "0bc822abd44dccce550e4f127bab0d789a1c10f479b6c0009da9c6760565cd2c",
+          "text_chars": 11425,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": {
+            "action": "click:Explain this view",
+            "element": "button",
+            "label": "explain this view",
+            "result": "ok",
+            "viewport": "desktop",
+            "visible_change": false
+          },
+          "bytes": 105589,
+          "captured_at": "2026-11-11T00:36:36Z",
+          "controls": 164,
+          "kind": "screenshot",
+          "label": "after-3",
+          "path": ".workshop/evidence/20261111T003628Z-deployed-desktop-after-3.png",
+          "revision": {
+            "commit": "8a431c8f7130c4fbe8806f78110b30ed69b6a408",
+            "dirty": ""
+          },
+          "scope": "deployed",
+          "sha256": "0bc822abd44dccce550e4f127bab0d789a1c10f479b6c0009da9c6760565cd2c",
+          "text_chars": 11425,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": null,
+          "bytes": 109362,
+          "captured_at": "2026-11-11T00:37:51Z",
+          "controls": 161,
+          "kind": "screenshot",
+          "label": "initial",
+          "path": ".workshop/evidence/20261111T003746Z-deployed-desktop-initial.png",
+          "revision": {
+            "commit": "8a431c8f7130c4fbe8806f78110b30ed69b6a408",
+            "dirty": "5e831400fa352ad4"
+          },
+          "scope": "deployed",
+          "sha256": "ee30da0347a20539d95e2c40672f5fe19d9d8e3f2a793518dc126f665bb99c6b",
+          "text_chars": 11224,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": null,
+          "bytes": 109354,
+          "captured_at": "2026-11-11T00:37:57Z",
+          "controls": 161,
+          "kind": "screenshot",
+          "label": "initial",
+          "path": ".workshop/evidence/20261111T003753Z-deployed-desktop-initial.png",
+          "revision": {
+            "commit": "8a431c8f7130c4fbe8806f78110b30ed69b6a408",
+            "dirty": "5e831400fa352ad4"
+          },
+          "scope": "deployed",
+          "sha256": "58c84151f392ba64f039563fe65657a1603146c04e131bc62c2c09ad2d9fd261",
+          "text_chars": 11224,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": {
+            "action": "click:Explain this view",
+            "element": "button",
+            "label": "explain this view",
+            "result": "ok",
+            "viewport": "desktop",
+            "visible_change": true
+          },
+          "bytes": 105589,
+          "captured_at": "2026-11-11T00:37:59Z",
+          "controls": 164,
+          "kind": "screenshot",
+          "label": "after-1",
+          "path": ".workshop/evidence/20261111T003753Z-deployed-desktop-after-1.png",
+          "revision": {
+            "commit": "8a431c8f7130c4fbe8806f78110b30ed69b6a408",
+            "dirty": "5e831400fa352ad4"
+          },
+          "scope": "deployed",
+          "sha256": "0bc822abd44dccce550e4f127bab0d789a1c10f479b6c0009da9c6760565cd2c",
+          "text_chars": 11425,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": null,
+          "bytes": 109362,
+          "captured_at": "2026-11-11T00:39:11Z",
+          "controls": 161,
+          "kind": "screenshot",
+          "label": "initial",
+          "path": ".workshop/evidence/20261111T003907Z-deployed-desktop-initial.png",
+          "revision": {
+            "commit": "8a431c8f7130c4fbe8806f78110b30ed69b6a408",
+            "dirty": "5e831400fa352ad4"
+          },
+          "scope": "deployed",
+          "sha256": "ee30da0347a20539d95e2c40672f5fe19d9d8e3f2a793518dc126f665bb99c6b",
+          "text_chars": 11224,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": {
+            "action": "click:Explain this view",
+            "element": "button",
+            "label": "explain this view",
+            "result": "ok",
+            "viewport": "desktop",
+            "visible_change": true
+          },
+          "bytes": 105615,
+          "captured_at": "2026-11-11T00:39:13Z",
+          "controls": 164,
+          "kind": "screenshot",
+          "label": "after-1",
+          "path": ".workshop/evidence/20261111T003907Z-deployed-desktop-after-1.png",
+          "revision": {
+            "commit": "8a431c8f7130c4fbe8806f78110b30ed69b6a408",
+            "dirty": "5e831400fa352ad4"
+          },
+          "scope": "deployed",
+          "sha256": "787354795d6215f7da5b7f6fef0a36821a5876ca68c3c47f06afb217fc93356f",
+          "text_chars": 11425,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        },
+        {
+          "action": null,
+          "bytes": 109362,
+          "captured_at": "2026-11-11T00:45:02Z",
+          "controls": 161,
+          "kind": "screenshot",
+          "label": "initial",
+          "path": ".workshop/evidence/20261111T004457Z-deployed-desktop-initial.png",
+          "revision": {
+            "commit": "5bc2a4b5b9e548039ed3be917e5a7f27a8306132",
+            "dirty": "2b894e62945d1405"
+          },
+          "scope": "deployed",
+          "sha256": "ee30da0347a20539d95e2c40672f5fe19d9d8e3f2a793518dc126f665bb99c6b",
+          "text_chars": 11224,
+          "title": "price-spike-watch | Created via apx",
+          "unlabelled_controls": 0,
+          "url": "https://price-spike-watch-7474650366574225.aws.databricksapps.com",
+          "viewport": "desktop"
+        }
+      ]
+    }
+  },
+  "facts": [
+    {
+      "at": "2026-11-10T22:45:06Z",
+      "by": "attendee",
+      "text": "Price spike watch: AEMO 5-min price/demand by region, spikes linked to market notices and generation"
+    }
+  ],
+  "history": [
+    {
+      "at": "2026-11-10T23:01:47Z",
+      "event": "evidence",
+      "kinds": [
+        "screenshot"
+      ]
+    },
+    {
+      "at": "2026-11-10T23:02:43Z",
+      "event": "evidence",
+      "kinds": [
+        "screenshot"
+      ]
+    },
+    {
+      "at": "2026-11-10T23:06:19Z",
+      "brief_revision": 2,
+      "event": "stage",
+      "evidence": {
+        "preview": "https://price-spike-watch-7474650366574225.aws.databricksapps.com"
+      },
+      "from": "build",
+      "to": "feedback"
+    },
+    {
+      "at": "2026-11-10T23:06:27Z",
+      "event": "evidence",
+      "kinds": [
+        "screenshot"
+      ]
+    },
+    {
+      "at": "2026-11-10T23:06:29Z",
+      "brief_revision": 2,
+      "event": "stage",
+      "evidence": {
+        "preview": "https://price-spike-watch-7474650366574225.aws.databricksapps.com"
+      },
+      "from": "feedback",
+      "to": "build"
+    },
+    {
+      "at": "2026-11-10T23:06:35Z",
+      "event": "evidence",
+      "kinds": [
+        "screenshot"
+      ]
+    },
+    {
+      "at": "2026-11-11T00:30:42Z",
+      "event": "evidence",
+      "kinds": [
+        "screenshot"
+      ]
+    },
+    {
+      "at": "2026-11-11T00:31:21Z",
+      "brief_revision": 3,
+      "event": "stage",
+      "evidence": {
+        "preview": "https://price-spike-watch-7474650366574225.aws.databricksapps.com"
+      },
+      "from": "build",
+      "to": "feedback"
+    },
+    {
+      "at": "2026-11-11T00:31:28Z",
+      "event": "evidence",
+      "kinds": [
+        "screenshot"
+      ]
+    },
+    {
+      "at": "2026-11-11T00:31:55Z",
+      "event": "evidence",
+      "kinds": [
+        "screenshot"
+      ]
+    },
+    {
+      "at": "2026-11-11T00:33:13Z",
+      "event": "evidence",
+      "kinds": [
+        "screenshot"
+      ]
+    },
+    {
+      "at": "2026-11-11T00:33:20Z",
+      "event": "evidence",
+      "kinds": [
+        "screenshot"
+      ]
+    },
+    {
+      "at": "2026-11-11T00:36:27Z",
+      "event": "evidence",
+      "kinds": [
+        "screenshot"
+      ]
+    },
+    {
+      "at": "2026-11-11T00:36:36Z",
+      "event": "evidence",
+      "kinds": [
+        "screenshot"
+      ]
+    },
+    {
+      "at": "2026-11-11T00:37:51Z",
+      "event": "evidence",
+      "kinds": [
+        "screenshot"
+      ]
+    },
+    {
+      "at": "2026-11-11T00:37:59Z",
+      "event": "evidence",
+      "kinds": [
+        "screenshot"
+      ]
+    },
+    {
+      "at": "2026-11-11T00:39:13Z",
+      "event": "evidence",
+      "kinds": [
+        "screenshot"
+      ]
+    },
+    {
+      "at": "2026-11-11T00:45:02Z",
+      "event": "evidence",
+      "kinds": [
+        "screenshot"
+      ]
+    }
+  ],
+  "outcome": null,
+  "path": {
+    "at": "2026-11-10T22:45:06Z",
+    "chosen_by": "attendee",
+    "source": null,
+    "value": "rapid"
+  },
+  "phase": "feedback",
+  "project": "price-spike-watch",
+  "questions": [],
+  "requests": [],
+  "revision": 29,
+  "schema": "workshop-design-workflow",
+  "success_criteria": [],
+  "version": 1,
+  "workflow_version": 2
+}

@@ -1,0 +1,30 @@
+bundle:
+  name: price-spike-watch
+
+sync:
+  include:
+    - .build
+
+artifacts:
+  default:
+    build: apx build
+
+resources:
+  apps:
+    price-spike-watch-app:
+      name: "price-spike-watch"
+      description: "NEM price spike watch: spikes by region and what drove them"
+      source_code_path: ./.build
+      user_api_scopes:
+        - sql
+        - ai-gateway
+      resources:
+        - name: sql-warehouse
+          sql_warehouse:
+            id: 60eae4dc9633ec4a
+            permission: CAN_USE
+
+targets:
+  dev:
+    mode: development
+    default: true

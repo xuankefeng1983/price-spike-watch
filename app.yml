@@ -1,0 +1,4 @@
+command: ["uvicorn", "price_spike_watch.backend.app:app", "--workers", "2"]
+env:
+  - name: DATABRICKS_WAREHOUSE_ID
+    valueFrom: sql-warehouse
